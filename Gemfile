@@ -3,11 +3,11 @@ source "https://rubygems.org"
 
 group :production do
   gem "pg", "~> 0.17.1"
-  gem "unicorn", "~> 4.7"
+  gem "unicorn", "~> 4.9"
 end
 
 group :development do
-  gem "sqlite3", "~> 1.3", ">= 1.3.8"
+  gem "sqlite3", "= 1.3.10"
 end
 
 group :development, :test do
@@ -28,14 +28,14 @@ gem "bcrypt-ruby", "~> 3.1.2"
 gem "delayed_job", "~> 4.0"
 gem "delayed_job_active_record", "~> 4.0"
 gem "feedbag", "~> 0.9.2"
-gem "feedjira", "~> 1.3.0"
+gem "feedjira", "~> 1.6.0"
 gem "highline", "~> 1.6", ">= 1.6.20", require: false
 gem "i18n", "~> 0.6.9"
 gem "loofah", "~> 2.0.0"
 gem "nokogiri", "~> 1.6"
 gem "racksh", "~> 1.0"
 gem "rake", "~> 10.1", ">= 10.1.1"
-gem "sinatra", "~> 1.4", ">= 1.4.4"
+gem "sinatra", "= 1.4.6"
 gem "sinatra-assetpack", "~> 0.3.1", require: "sinatra/assetpack"
 gem "sinatra-activerecord", "~> 1.2", ">= 1.2.3"
 gem "sinatra-contrib", ">= 1.4.2"
